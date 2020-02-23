@@ -90,6 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,6 +149,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="hex-2020.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BiFonction.h" />
+    <ClInclude Include="BiPredicate.h" />
+    <ClInclude Include="Compare.h" />
+    <ClInclude Include="Constantes.h" />
+    <ClInclude Include="Consummer.h" />
+    <ClInclude Include="DuoPredicate.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Fonction.h" />
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="GroupePredicate.h" />
+    <ClInclude Include="Hex.h" />
+    <ClInclude Include="HexSwitch.h" />
+    <ClInclude Include="Predicate.h" />
+    <ClInclude Include="Range.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="StringPredicate.h" />
+    <ClInclude Include="Variable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

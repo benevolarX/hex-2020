@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Constantes.h"
+#include "Exception.h"
+#include "Range.h"
+#include "StringPredicate.h"
+#include "GroupePredicate.h"
+#include "BiPredicate.h"
+#include "BiFonction.h"
+#include "Generator.h"
+#include "Consummer.h"
+#include "Compare.h"
+#include "Stream.h"
+#include "Variable.h"
+#include "HexSwitch.h"

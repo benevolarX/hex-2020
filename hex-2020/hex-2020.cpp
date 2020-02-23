@@ -2,10 +2,51 @@
 //
 
 #include <iostream>
+#include "Hex.h"
+
+using namespace std;
+using namespace hex;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    auto entier = Digit();
+    auto reel = Number();
+    auto jean = Regex("^jean$");
+    auto minuscule = Lower();
+    auto n_ieme_lettre = AtN('A', 1);
+
+    auto sw = HexSwitch<std::string>();
+    sw.add_case(&entier); // 0
+    sw.add_case(&reel); // 1
+    sw.add_case(&jean); // 2
+    sw.add_case(&minuscule); // 3
+    sw.add_case(&n_ieme_lettre); // 4
+
+    std::string s = "MAman";
+    switch (sw(s))
+    {
+    case 0 :
+        cout << "entier entre guillemet";
+        break;
+    case 1 :
+        cout << "reel entre guillemet";
+        break;
+    case 2 :
+        cout << "mot jean";
+        break;
+    case 3 :
+        cout << "pas de majuscule";
+        break;
+    case 4 :
+        cout << "la 2eme lettre est A (majuscule)";
+        break;
+    default :
+        cout << "aucun des autres cas";
+        break;
+    }
+
+    return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
